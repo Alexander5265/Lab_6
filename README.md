@@ -6,7 +6,7 @@
 
 ### Текст задачи.
 
-![Image alt](https://github.com/Alexander5265/Lab_6/raw/main/6_1/усл_2.png)
+![Image alt](https://github.com/Alexander5265/Lab_6/raw/main/усл_2.png)
 
 ### Алгоритм решения.
 
@@ -18,7 +18,7 @@
 
 ### Тестирование.
 
-![Image alt](https://github.com/Alexander5265/Lab_6/raw/main/6_1/6_2.png)
+![Image alt](https://github.com/Alexander5265/Lab_6/raw/main/6_2.png)
 
 # Задание 3.
 
