@@ -1,0 +1,14 @@
+C:\Users\Пользователь\Desktop\uni 2024\2_year\YAPI\6_lab\6_1\6_1\bin\Debug\net9.0\6_1.exe
+C:\Users\Пользователь\Desktop\uni 2024\2_year\YAPI\6_lab\6_1\6_1\bin\Debug\net9.0\6_1.deps.json
+C:\Users\Пользователь\Desktop\uni 2024\2_year\YAPI\6_lab\6_1\6_1\bin\Debug\net9.0\6_1.runtimeconfig.json
+C:\Users\Пользователь\Desktop\uni 2024\2_year\YAPI\6_lab\6_1\6_1\bin\Debug\net9.0\6_1.dll
+C:\Users\Пользователь\Desktop\uni 2024\2_year\YAPI\6_lab\6_1\6_1\bin\Debug\net9.0\6_1.pdb
+C:\Users\Пользователь\Desktop\uni 2024\2_year\YAPI\6_lab\6_1\6_1\obj\Debug\net9.0\6_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Пользователь\Desktop\uni 2024\2_year\YAPI\6_lab\6_1\6_1\obj\Debug\net9.0\6_1.AssemblyInfoInputs.cache
+C:\Users\Пользователь\Desktop\uni 2024\2_year\YAPI\6_lab\6_1\6_1\obj\Debug\net9.0\6_1.AssemblyInfo.cs
+C:\Users\Пользователь\Desktop\uni 2024\2_year\YAPI\6_lab\6_1\6_1\obj\Debug\net9.0\6_1.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\Desktop\uni 2024\2_year\YAPI\6_lab\6_1\6_1\obj\Debug\net9.0\6_1.dll
+C:\Users\Пользователь\Desktop\uni 2024\2_year\YAPI\6_lab\6_1\6_1\obj\Debug\net9.0\refint\6_1.dll
+C:\Users\Пользователь\Desktop\uni 2024\2_year\YAPI\6_lab\6_1\6_1\obj\Debug\net9.0\6_1.pdb
+C:\Users\Пользователь\Desktop\uni 2024\2_year\YAPI\6_lab\6_1\6_1\obj\Debug\net9.0\6_1.genruntimeconfig.cache
+C:\Users\Пользователь\Desktop\uni 2024\2_year\YAPI\6_lab\6_1\6_1\obj\Debug\net9.0\ref\6_1.dll
