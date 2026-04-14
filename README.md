@@ -6,8 +6,7 @@
 
 ### Текст задачи.
 
-Список содержит строки, обозначающие двоичные числа от 1 до 9. Найти в
-десятичной системе счисления сумму элементов списка. Использовать Seq.fold.
+![Image alt](https://github.com/Alexander5265/Lab_6/raw/main/6_1/усл_2.png)
 
 ### Алгоритм решения.
 
@@ -19,7 +18,7 @@
 
 ### Тестирование.
 
-![Image alt](https://github.com/Alexander5265/Lab_3/raw/main/3_2/debug3_2.png)
+![Image alt](https://github.com/Alexander5265/Lab_6/raw/main/6_1/6_2.png)
 
 # Задание 3.
 
@@ -27,10 +26,7 @@
 
 ### Текст задачи.
 
-Решить с использованием последовательности задачу на
-обработку файлов/каталогов.
-Выяснить, есть ли в каталоге и его подкаталогах файл с введенным
-названием.
+![Image alt](https://github.com/Alexander5265/Lab_6/raw/main/6_1/усл_3.png)
 
 ### Алгоритм решения.
 
@@ -42,4 +38,4 @@
 
 ### Тестирование.
 
-![Image alt](https://github.com/Alexander5265/Lab_3/raw/main/3_3/debug3_3.png)
+![Image alt](https://github.com/Alexander5265/Lab_6/raw/main/6_1/6_3.png)
