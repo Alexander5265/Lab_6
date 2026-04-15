@@ -1,70 +1,61 @@
-﻿using System;
+using System;
 
 class Program
 {
+    static Triangle InputTriangle(string name)
+    {
+        Console.WriteLine("Введите стороны:");
+        
+        double a, b, c;
+        
+        Console.Write("A: ");
+        while (!double.TryParse(Console.ReadLine(), out a))
+            Console.Write("Error! Please enter a valid number!: ");
+        
+        Console.Write("B: ");
+        while (!double.TryParse(Console.ReadLine(), out b))
+            Console.Write("Error! Please enter a valid number!: ");
+        
+        Console.Write("C: ");
+        while (!double.TryParse(Console.ReadLine(), out c))
+            Console.Write("Error! Please enter a valid number!: ");
+        
+        return new Triangle(a, b, c);
+    }
+    
     static void Main()
     {
-        Console.WriteLine("Тест конструкторов - ");
-
-        Triangle t1 = new Triangle();
-        Console.WriteLine("По умолчанию: " + t1);
-
-        Triangle t2 = new Triangle(3, 4, 5);
-        Console.WriteLine("С параметрами: " + t2);
-
-        Triangle t3 = new Triangle(t2);
-        Console.WriteLine("Копия: " + t3);
-
-        Console.WriteLine("\nПроверка метода Exists - ");
-        Console.WriteLine($"{t2} -> {t2.Exists()}");
-
-        Console.WriteLine("\nВвод пользователя - ");
-
         try
         {
-            Console.Write("Введите сторону A: ");
-            double a = Convert.ToDouble(Console.ReadLine());
+            Triangle triangle1 = InputTriangle("Enter triangle #1:");
+            Triangle triangle2 = InputTriangle("Enter triangle #2:");
 
-            Console.Write("Введите сторону B: ");
-            double b = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("\n RESULTS: ");
 
-            Console.Write("Введите сторону C: ");
-            double c = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"\nt1: {triangle1}");
+            Console.WriteLine($"Площадь: {triangle1.GetArea()}");
 
-            Triangle userTriangle1 = new Triangle(a, b, c);
+            Console.WriteLine($"\nt2: {triangle2}");
+            Console.WriteLine($"Площадь: {triangle2.GetArea()}");
 
-            Console.WriteLine("Ваш треугольник: " + userTriangle1);
-            Console.WriteLine("Существует: " + userTriangle1.Exists());
+            Console.WriteLine($"\nПериметр #1: {(double)triangle1}");
+            Console.WriteLine($"\nПериметр #2: {(double)triangle2}");
+
+            Console.WriteLine($"\n#1 Существует: {(triangle1 ? "Yes" : "No")}");
+            Console.WriteLine($"\n#2 Существует: {(triangle2 ? "Yes" : "No")}");
+
+            Console.WriteLine("\nСравнение площадей: ");
+
+            if (triangle1 > triangle2)
+                Console.WriteLine("ТРеугольник #1 > #2");
+            else if (triangle1 < triangle2)
+                Console.WriteLine("Треугольник #1 < #2");
+            else
+                Console.WriteLine("Площади равны!");
         }
-        catch (FormatException)
-        {
-            Console.WriteLine("Ошибка: введено не число!");
-        }
-        catch (ArgumentException ex)
+        catch (Exception ex)
         {
             Console.WriteLine("Ошибка: " + ex.Message);
         }
-        
-        // Для 3 лабы
-        Triangle tr1 = new Triangle(3, 4, 5);
-        Triangle tr2 = new Triangle(6, 8, 10);
-
-        Console.WriteLine("\nТреугольник 1: " + tr1);
-        Console.WriteLine("Площадь: " + tr1.GetArea());
-
-        Console.WriteLine("\nТреугольник 2: " + tr2);
-        Console.WriteLine("Площадь: " + tr2.GetArea());
-        
-        double perimeter = (double)tr1;
-        Console.WriteLine($"\nПериметр t1: {perimeter}");
-        
-        if (tr1)
-            Console.WriteLine("t1 существует");
-        else
-            Console.WriteLine("t1 не существует");
-        
-        Console.WriteLine("\nСравнение площадей:");
-        Console.WriteLine($"t1 > t2: {tr1 > tr2}");
-        Console.WriteLine($"t1 < t2: {tr1 < tr2}");
     }
 }
