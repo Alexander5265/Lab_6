@@ -1,61 +1,26 @@
 using System;
 
-class Program
+internal class Program
 {
-    static Triangle InputTriangle(string name)
+    private static void Main(string[] args)
     {
-        Console.WriteLine("Введите стороны:");
+        double sideA, sideB, sideC;
+        Console.Write("Введите стороны треугольника #1:\n ");
+        Triangle triangle1 = new Triangle();
+        Console.Write("\nВведите стороны треугольника #2:\n ");
+        Triangle triangle2 = new Triangle();
         
-        double a, b, c;
+        Console.WriteLine("Ваш треугольник: " + triangle1);
+        Console.WriteLine("Существует: " + triangle1.Existance());
+        Console.WriteLine("\nВаш треугольник: " + triangle2);
+        Console.WriteLine("Существует: " + triangle2.Existance());
         
-        Console.Write("A: ");
-        while (!double.TryParse(Console.ReadLine(), out a))
-            Console.Write("Error! Please enter a valid number!: ");
+        Console.WriteLine("Площадь треугольника #1 = " + triangle1.Area());
+        Console.WriteLine("Площадь треугольника #2 = " + triangle1.Area());
         
-        Console.Write("B: ");
-        while (!double.TryParse(Console.ReadLine(), out b))
-            Console.Write("Error! Please enter a valid number!: ");
-        
-        Console.Write("C: ");
-        while (!double.TryParse(Console.ReadLine(), out c))
-            Console.Write("Error! Please enter a valid number!: ");
-        
-        return new Triangle(a, b, c);
-    }
-    
-    static void Main()
-    {
-        try
-        {
-            Triangle triangle1 = InputTriangle("Enter triangle #1:");
-            Triangle triangle2 = InputTriangle("Enter triangle #2:");
-
-            Console.WriteLine("\n RESULTS: ");
-
-            Console.WriteLine($"\nt1: {triangle1}");
-            Console.WriteLine($"Площадь: {triangle1.GetArea()}");
-
-            Console.WriteLine($"\nt2: {triangle2}");
-            Console.WriteLine($"Площадь: {triangle2.GetArea()}");
-
-            Console.WriteLine($"\nПериметр #1: {(double)triangle1}");
-            Console.WriteLine($"\nПериметр #2: {(double)triangle2}");
-
-            Console.WriteLine($"\n#1 Существует: {(triangle1 ? "Yes" : "No")}");
-            Console.WriteLine($"\n#2 Существует: {(triangle2 ? "Yes" : "No")}");
-
-            Console.WriteLine("\nСравнение площадей: ");
-
-            if (triangle1 > triangle2)
-                Console.WriteLine("ТРеугольник #1 > #2");
-            else if (triangle1 < triangle2)
-                Console.WriteLine("Треугольник #1 < #2");
-            else
-                Console.WriteLine("Площади равны!");
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine("Ошибка: " + ex.Message);
-        }
+        Console.WriteLine("S треугольника #1 больше S треугольника #2: ");
+        Console.WriteLine($"triangle1 > triangle2 {triangle1 > triangle2}");
+        Console.WriteLine("S треугольника #2 больше S треугольника #1: ");
+        Console.WriteLine($"triangle1 < triangle2 {triangle1 < triangle2}");
     }
 }
