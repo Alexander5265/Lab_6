@@ -7,13 +7,13 @@ public class Triangle
     public Triangle()
     {
         Console.Write("\nВведите сторону A: ");
-        double sideA;
+        //double sideA;
         bool f = false;
         string input = Console.ReadLine();
         while (!f)
         {
-            f = double.TryParse(input, out sideA);
-            if (!f || sideA <= 0)
+            f = double.TryParse(input, out _sideA);
+            if (!f || _sideA <= 0)
             {
                 Console.WriteLine("Ошибка! Повторите ввод");
                 Console.Write("\nВведите сторону A: ");
@@ -22,13 +22,13 @@ public class Triangle
         }
         
         Console.Write("Введите сторону B: ");
-        double sideB;
-        bool f2 = false;
+        //double sideB;
+        f = false;
         string input2 = Console.ReadLine();
         while (!f)
         {
-            f = double.TryParse(input2, out sideB);
-            if (!f || sideB <= 0)
+            f = double.TryParse(input2, out _sideB);
+            if (!f || _sideB <= 0)
             {
                 Console.WriteLine("Ошибка! Повторите ввод");
                 Console.Write("\nВведите сторону B: ");
@@ -37,13 +37,13 @@ public class Triangle
         }
         
         Console.Write("Введите сторону C: ");
-        double sideC;
-        bool f3 = false;
+        //double sideC;
+        f = false;
         string input3 = Console.ReadLine();
         while (!f)
         {
-            f = double.TryParse(input3, out sideC);
-            if (!f || sideC <= 0)
+            f = double.TryParse(input3, out _sideC);
+            if (!f || _sideC <= 0)
             {
                 Console.WriteLine("Ошибка! Повторите ввод");
                 Console.Write("\nВведите сторону C: ");
