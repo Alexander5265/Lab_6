@@ -1,43 +1,80 @@
-
 public class Triangle
 {
-    private double sideA;
-    private double sideB;
-    private double sideC;
+    private double _sideA;
+    private double _sideB;
+    private double _sideC;
 
     public Triangle()
     {
-        Console.Write("Введите сторону A: ");
-        sideA = double.Parse(Console.ReadLine());
+        Console.Write("\nВведите сторону A: ");
+        double sideA;
+        bool f = false;
+        string input = Console.ReadLine();
+        while (!f)
+        {
+            f = double.TryParse(input, out sideA);
+            if (!f || sideA <= 0)
+            {
+                Console.WriteLine("Ошибка! Повторите ввод");
+                Console.Write("\nВведите сторону A: ");
+                input = Console.ReadLine();
+            }
+        }
+        
         Console.Write("Введите сторону B: ");
-        sideB = double.Parse(Console.ReadLine());
+        double sideB;
+        bool f2 = false;
+        string input2 = Console.ReadLine();
+        while (!f)
+        {
+            f = double.TryParse(input2, out sideB);
+            if (!f || sideB <= 0)
+            {
+                Console.WriteLine("Ошибка! Повторите ввод");
+                Console.Write("\nВведите сторону B: ");
+                input2 = Console.ReadLine();
+            }
+        }
+        
         Console.Write("Введите сторону C: ");
-        sideC = double.Parse(Console.ReadLine());
+        double sideC;
+        bool f3 = false;
+        string input3 = Console.ReadLine();
+        while (!f)
+        {
+            f = double.TryParse(input3, out sideC);
+            if (!f || sideC <= 0)
+            {
+                Console.WriteLine("Ошибка! Повторите ввод");
+                Console.Write("\nВведите сторону C: ");
+                input3 = Console.ReadLine();
+            }
+        }
     }
     
     public Triangle(double sideA, double sideB, double sideC)
     {
-        this.sideA = sideA;
-        this.sideB = sideB;
-        this.sideC = sideC;
+        this._sideA = sideA;
+        this._sideB = sideB;
+        this._sideC = sideC;
     }
 
     public bool Existance()
     {
-        return sideA + sideB > sideC &&
-               sideA + sideC > sideB &&
-               sideB + sideC > sideC;
+        return _sideA + _sideB > _sideC &&
+               _sideA + _sideC > _sideB &&
+               _sideB + _sideC > _sideC;
     }
     
     public double Area()
     {
-        double p = (sideA + sideB + sideC) / 2;
-        return Math.Sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));
+        double p = (_sideA + _sideB + _sideC) / 2;
+        return Math.Sqrt(p * (p - _sideA) * (p - _sideB) * (p - _sideC));
     }
     
     public double Perimeter()
     {
-        return sideA + sideB + sideC;
+        return _sideA + _sideB + _sideC;
     }
     
     // Бинарные операции (сравнение площадей)
@@ -49,5 +86,10 @@ public class Triangle
     public static bool operator <(Triangle triangle1, Triangle triangle2)
     {
         return triangle1.Area() < triangle2.Area();
+    }
+
+    public override string ToString()
+    {
+        return $"A = {_sideA}, B = {_sideB}, C = {_sideC}";
     }
 }
