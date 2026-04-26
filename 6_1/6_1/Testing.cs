@@ -9,15 +9,15 @@ public class Triangle
         Console.Write("\nВведите сторону A: ");
         //double sideA;
         bool f = false;
-        string input = Console.ReadLine();
+        string input1 = Console.ReadLine();
         while (!f)
         {
-            f = double.TryParse(input, out _sideA);
+            f = double.TryParse(input1, out _sideA);
             if (!f || _sideA <= 0)
             {
                 Console.WriteLine("Ошибка! Повторите ввод");
                 Console.Write("\nВведите сторону A: ");
-                input = Console.ReadLine();
+                input1 = Console.ReadLine();
             }
         }
         
