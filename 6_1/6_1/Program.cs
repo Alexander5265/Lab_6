@@ -15,7 +15,7 @@ internal class Program
         Console.WriteLine("Существует: " + triangle2.Existance());
         
         Console.WriteLine("\nПлощадь треугольника #1 = " + triangle1.Area());
-        Console.WriteLine("Площадь треугольника #2 = " + triangle1.Area());
+        Console.WriteLine("Площадь треугольника #2 = " + triangle2.Area());
         
         Console.WriteLine("\nS треугольника #1 больше S треугольника #2: ");
         Console.WriteLine($"triangle1 > triangle2 {triangle1 > triangle2}");
