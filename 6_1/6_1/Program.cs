@@ -15,12 +15,13 @@ internal class Program
         Console.WriteLine("Ваш треугольник #2: " + triangle2);
         Console.WriteLine("Существует: " + triangle2.Existance());
         
-        Console.WriteLine("\nПлощадь треугольника #1 = " + triangle1.Area());
-        Console.WriteLine("Площадь треугольника #2 = " + triangle2.Area());
+        Console.WriteLine("\nПлощадь треугольника #1 = " + -triangle1);
+        Console.WriteLine("Площадь треугольника #2 = " + -triangle2);
         
         Console.WriteLine("\nS треугольника #1 больше S треугольника #2: ");
         Console.WriteLine($"triangle1 > triangle2 {triangle1 > triangle2}");
         Console.WriteLine("S треугольника #2 больше S треугольника #1: ");
         Console.WriteLine($"triangle1 < triangle2 {triangle1 < triangle2}");
+        
     }
 }
