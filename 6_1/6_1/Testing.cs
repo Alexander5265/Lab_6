@@ -80,11 +80,24 @@ public class Triangle
 
     }
     
-    public double Perimeter()
+    public static implicit operator double(Triangle t)
     {
-        return _sideA + _sideB + _sideC;
+       return t._sideA + t._sideB + t._sideC;
     }
-    
+
+    public static double operator -(Triangle t)
+    {
+        if (t.Existance())
+        {
+            double p = (t._sideA + t._sideB + t._sideC) / 2;
+            return Math.Sqrt(p * (p - t._sideA) * (p - t._sideB) * (p - t._sideC));
+        }
+        else
+        {
+            return 0;
+        }
+        
+    }
     // Бинарные операции (сравнение площадей)
     public static bool operator >(Triangle triangle1, Triangle triangle2)
     {
