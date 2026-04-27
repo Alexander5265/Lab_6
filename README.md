@@ -17,6 +17,7 @@
 5. Создать тест + ввод 
 
 ### Тестирование.
+<img width="615" height="389" alt="изображение" src="https://github.com/user-attachments/assets/749bb584-1937-4bbf-86e9-a044c57409ca" />
 
 ![Image alt](https://github.com/Alexander5265/Lab_6/raw/main/6_2.png)
 
