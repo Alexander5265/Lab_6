@@ -4,6 +4,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+
         Console.Write("Введите стороны треугольника #1: ");
         Triangle triangle1 = new Triangle();
         Console.Write("\nВведите стороны треугольника #2: ");
