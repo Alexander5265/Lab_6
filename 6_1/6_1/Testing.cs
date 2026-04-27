@@ -10,7 +10,7 @@ public class Triangle
         //double sideA;
         bool f = false;
         string input1 = Console.ReadLine();
-        while (!f)
+        while (!f || _sideA <= 0)
         {
             f = double.TryParse(input1, out _sideA);
             if (!f || _sideA <= 0)
@@ -25,7 +25,7 @@ public class Triangle
         //double sideB;
         f = false;
         string input2 = Console.ReadLine();
-        while (!f)
+        while (!f || _sideB <= 0)
         {
             f = double.TryParse(input2, out _sideB);
             if (!f || _sideB <= 0)
@@ -40,7 +40,7 @@ public class Triangle
         //double sideC;
         f = false;
         string input3 = Console.ReadLine();
-        while (!f)
+        while (!f || _sideC <= 0)
         {
             f = double.TryParse(input3, out _sideC);
             if (!f || _sideC <= 0)
@@ -63,13 +63,21 @@ public class Triangle
     {
         return _sideA + _sideB > _sideC &&
                _sideA + _sideC > _sideB &&
-               _sideB + _sideC > _sideC;
+               _sideB + _sideC > _sideA;
     }
     
     public double Area()
     {
-        double p = (_sideA + _sideB + _sideC) / 2;
-        return Math.Sqrt(p * (p - _sideA) * (p - _sideB) * (p - _sideC));
+        if (Existance())
+        {
+            double p = (_sideA + _sideB + _sideC) / 2;
+            return Math.Sqrt(p * (p - _sideA) * (p - _sideB) * (p - _sideC));
+        }
+        else
+        {
+            return 0;
+        }
+
     }
     
     public double Perimeter()
