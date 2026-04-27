@@ -19,8 +19,6 @@
 ### Тестирование.
 <img width="615" height="389" alt="изображение" src="https://github.com/user-attachments/assets/749bb584-1937-4bbf-86e9-a044c57409ca" />
 
-![Image alt](https://github.com/Alexander5265/Lab_6/raw/main/6_2.png)
-
 # Задание 3.
 
 ## Задача 10.
@@ -39,4 +37,4 @@
 
 ### Тестирование.
 
-![Image alt](https://github.com/Alexander5265/Lab_6/raw/main/6_3.png)
+<img width="615" height="389" alt="изображение" src="https://github.com/user-attachments/assets/694ad391-7dc0-4572-be2d-3d7b8a904b0a" />
